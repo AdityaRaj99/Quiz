@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Quiz-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div style="background-image: url('quizz.jpg'); width: fit-content; height:625px;">
+    <div style="width: 230px; height: 50px;"><div style="display: none; font-size:80px;" id="time">10:00</div></div>
+<div  class="Container" ></div>
+
+<div style="display: block;" class="inner-div">
+  <p id="demo"></p>
+  <h2 class="question" style="text-align-last: center;">Welcome to Javascript Quiz</h2><br><br><br>
+  <form>
+  <ul>
+    <li>
+      <name="answer0" id="ans121" class="answer">
+      <label for="ans121">Instructions-:</label>
+    </li>
+    <li>
+      <name="answer0" id="ans121" class="answer">
+      <label for="ans121" >*Multiple choice Questions are given in which you can only choose one answer at a time.</label>
+    </li>
+    <li>
+      <name="answer0" id="ans122" class="answer">
+      <label for="ans122">*You will need to complete each of your attempts in one sitting, as you are allotted 10 minutes to complete each attempt.</label>
+    </li>
+    <li>
+      <name="answer0" id="ans123" class="answer">
+      <label for="ans123" >*Once you submit a answer only then you can go to next question.</label>
+    </li>
+    <li>
+      <name="answer0" id="ans124" class="answer">
+      <label for="ans124" >*Clock will start as soon as you start the test.</label>
+    </li>
+    <li>
+      <name="answer0" id="ans124" class="answer">
+      <label for="ans124" >*Score will be shown in the end.</label>
+    </li>
+  </ul>
+</form>
+  <button id="submit" onclick="sub(event); timerr();">Start Quiz</button>
+  
+</div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q1. Which type of JavaScript language is ___</h2>
+    <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer1" id="ans11" class="answer">
+        <label for="ans11" id="ans99">Object-Oriented</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer1" id="ans12" class="answer">
+        <label for="ans12">Object-Based</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer1" id="ans13" class="answer">
+        <label for="ans13" >Assembly-language</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer1" id="ans14" class="answer">
+        <label for="ans14" >High-level</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled  onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q2. Which one of the following also known as Conditional Expression:</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer2" id="ans21" class="answer">
+        <label for="ans21" >Alternative to if-else</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer2" id="ans22" class="answer">
+        <label for="ans22" >Switch statement</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer2" id="ans23" class="answer">
+        <label for="ans23" >If-then-else statement</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer2" id="ans24" class="answer">
+        <label for="ans24" >immediate if</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q3. In JavaScript, what is a block of statement?</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer3" id="ans31" class="answer">
+        <label for="ans31" >Conditional block</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer3" id="ans32" class="answer">
+        <label for="ans32" >block that combines a number of statements into a single compound statement</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer3" id="ans33" class="answer">
+        <label for="ans33" >both conditional block and a single statement</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer3" id="ans34" class="answer">
+        <label for="ans34" >block that contains a single statement</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+  
+    <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q4. Which of the following number object function returns the value of the number?</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio"  onclick="enable(event);" name="answer4" id="ans41" class="answer">
+        <label for="ans41" >toString()</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer4" id="ans42" class="answer">
+        <label for="ans42" >valueOf()</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer4" id="ans43" class="answer">
+        <label for="ans43" >toLocaleString()</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer4" id="ans44" class="answer">
+        <label for="ans44" >toPrecision()</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q5. When interpreter encounters an empty statements, what it will do:</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer5" id="ans51" class="answer">
+        <label for="ans51">Shows a warning</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer5" id="ans52" class="answer">
+        <label for="ans52">Prompts to complete the statement</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer5" id="ans53" class="answer">
+        <label for="ans53">Throws an error</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer5" id="ans54" class="answer">
+        <label for="ans54">Ignores the statements</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q6. The "function" and " var" are known as:</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer6" id="ans61" class="answer">
+        <label for="ans61">Keywords</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer6" id="ans62" class="answer">
+        <label for="ans62">Data types</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer6" id="ans63" class="answer">
+        <label for="ans63">Declaration statements</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer6" id="ans64" class="answer">
+        <label for="ans64">Prototypes</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q7. Which of the following variables takes precedence over the others if the names are the same?</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio"onclick="enable(event);" name="answer7" id="ans71" class="answer">
+        <label for="ans71">Global variable</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer7" id="ans72" class="answer">
+        <label for="ans72">The local element</label>
+      </li>
+      <li>
+        <input type="radio"onclick="enable(event);" name="answer7" id="ans73" class="answer">
+        <label for="ans73">The two of the above</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer7" id="ans74" class="answer">
+        <label for="ans74">None of the above</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q8. Which one of the following is the correct way for calling the JavaScript code?</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer8" id="ans81" class="answer">
+        <label for="ans81">Preprocessor</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer8" id="ans82" class="answer">
+        <label for="ans82">Triggering Event</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer8" id="ans83" class="answer">
+        <label for="ans83">RMI</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer8" id="ans84" class="answer">
+        <label for="ans84">Function/Method</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q9. Which of the following type of a variable is volatile?</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer9" id="ans91" class="answer">
+        <label for="ans91">Mutable variable</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer9" id="ans92" class="answer">
+        <label for="ans92">Dynamic variable</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer9" id="ans93" class="answer">
+        <label for="ans93">Volatile variable</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer9" id="ans94" class="answer">
+        <label for="ans94">Immutable variable</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+
+  <div style="display: none;" class="inner-div">
+    <p id="demo"></p>
+    <h2 class="question">Q10. In the JavaScript, which one of the following is not considered as an error:</h2>
+  <form>
+    <ul>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer10" id="ans101" class="answer">
+        <label for="ans101">Syntax error</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer10" id="ans102" class="answer">
+        <label for="ans102">Missing of semicolons</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer10" id="ans103" class="answer">
+        <label for="ans103">Division by zero</label>
+      </li>
+      <li>
+        <input type="radio" onclick="enable(event);" name="answer10" id="ans104" class="answer">
+        <label for="ans104">Missing of Bracket</label>
+      </li>
+    </ul>
+  </form>
+    <button id="submit" disabled onclick="sub(event);show();">submit</button>
+    <button id="previous" onclick="prev(event);">Previous</button>
+    
+  </div>
+ 
+  <div style="display: none;" class="inner-div">
+    <h2 class="question"  style="height: 260px; align-content: center;"  id="result"></h2>
+    <button id="Start_over" onclick="start_again();">Start Again</button>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

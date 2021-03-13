@@ -1,0 +1,106 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap">');
+*{
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.Container{
+    margin-top: 50px;
+ 
+}
+
+html{
+    font-size: 50%;
+}
+
+.main-div{
+     width: 250vw;
+     min-height: 450vh;
+     display: grid;
+     place-items: center;
+     background-color: lightskyblue;
+}
+
+.inner-div{
+    width: 80vw;
+    background-color: rgb(217, 217, 226);
+    padding: 55px 137px;
+    border-radius: 90px;
+    box-shadow: 0 10px 10px -7px rgba(0,0,0,0.4);
+}
+
+.inner-div h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 15px 0 20px 0;
+}
+
+.inner-div li{
+    font-size: 20px;
+    margin-top: 15px;
+    list-style: none;
+}
+
+input{
+    cursor: pointer;
+}
+
+#submit, .btn{
+     padding: 14px 40px;
+     outline: none;
+     font-size: 17px;
+     display: block;
+     margin: 0 85%;
+     border-radius: 23px;
+     text-transform: uppercase;
+     color: white;
+     background-color: lightskyblue;
+     margin-top: 40px;
+}
+
+#submit{
+    background-color: rgb(33, 117, 150);
+    cursor: pointer;
+}
+#previous, .btn{
+    padding: 14px 40px;
+    outline: none;
+    font-size: 17px;
+    display: block;
+    margin: 0 50%;
+    border-radius: 23px;
+    text-transform: uppercase;
+    color: white;
+    background-color: lightskyblue;
+    margin-top: -53px;
+}
+
+#previous{
+    background-color: rgb(33, 117, 150);
+    cursor: pointer;
+}
+
+#Start_over{
+    padding: 10px 30px;
+    outline: none;
+    font-size: 17px;
+    display: block;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(33, 117, 150);
+    margin-top: -43px;
+}
+
+#showScore{
+    background-color: white;
+    margin-top: 30px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 10px -7px rgba(0,0,0,0.4);
+}
+
+.scoreArea{
+    display: none;
+}
